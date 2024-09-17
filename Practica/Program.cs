@@ -4,3 +4,5 @@ Console.WriteLine("Hello, World!");
 void mostar_mensaje(){ 
 
 }
+void prueba() { 
+}
