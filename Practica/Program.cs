@@ -2,13 +2,14 @@
 using System.Drawing;
 
 Console.WriteLine("Hello, World!");
-mostar_mensaje();
-void mostar_mensaje(){ 
+//mostar_mensaje();
 
-}
-void prueba() { 
-}
-prueba();
+
+
+
+//Pregunta 6
+
+
 string opcion = "";
 do
 {
@@ -65,13 +66,15 @@ do
         case "F":
             Console.WriteLine("");
             Console.WriteLine("F) Mostrar los elementos de un arreglo unidimensional (PROC).");
-
+            mostrarElementos();
             break;
 
         case "G":
             Console.WriteLine("");
+            Console.WriteLine("G) Mostrar nombres de una lista");
+          
+            mostrarNombres();
             break;
-
 
         default:
             break;
@@ -188,6 +191,30 @@ int ConsultarNumero(int numero)
     return numero;
 }
 
+void mostrarElementos()
+{
+    int[] numero = { 1, 2, 3, 4, 5 };
+    for (int i = 0; i < numero.Length; i++)
+    {
+        Console.WriteLine("Elemento de arreglo: " + numero[i]);
+
+    }
+}
+
+void mostrarNombres()
+{
+    List<string> nombres = new List<string>();
+    nombres.Add("Maikito");
+    nombres.Add("Jesusito");
+    nombres.Add("Guillermito");
+    nombres.Add("Sheylita");
+
+    for (int i = 0; i < nombres.Count; i++)
+    {
+        Console.WriteLine(nombres[i]);
+
+    }
+}
 ConsultarNumero(0);
 
 Console.Read();
